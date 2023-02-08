@@ -8,4 +8,4 @@ newman_tests:
         entrypoint: [""]
     script:
         - newman --version
-        - newman run ./RestfulBookerBVT.postman_collection.json -e ./Local.postman_environment.json
+        - newman run RestfulBookerBVT.postman_collection.json -e Local.postman_environment.json
