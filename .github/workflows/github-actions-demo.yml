@@ -10,7 +10,7 @@ jobs:
       image: postman/newman
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Run API Tests
         run: newman run "RestfulBookerBVT.postman_collection.json" -e Production.postman_environment.json
